@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./src/swiper/default-styles.css">
+  <script src="https://use.fontawesome.com/367f182597.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="./src/keyboard/keyboard.css">
+  <link rel="stylesheet" href="style.css">
+  <title>movieSearch</title>
+</head>
+
+<body>
+  <header class="header">
+    <span class="logo">Movie Search</span>
+    <div class="show-favorites">Favourites at first</div>
+  </header>
+  <div class="search">
+    <form id="channel-query">
+      <input type="text" id="search-string" name="" placeholder="Search movie..." autocomplete="off">
+      <span class="icon-spinner"><i class="fa fa-spinner fa-spin fa-3x fa-fw hidden"></i></i></span>
+      <span class="icon-clear"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <span class="icon-keybord"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+      <button>Search</button>
+    </form>
+    <p id="error-message"></p>
+  </div>
+  <div class="slider-container">
+    <div class="slider-top">
+      <div class="buttons-container">
+        <button class="swiper-button-prev arrow arrow-left"></button>
+        <button class="swiper-button-next arrow arrow-right"></button>
+      </div>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="info">
+      <span>RS School 2020Q1</span>
+      <a class="gitHub-link" href="https://github.com/svdfsdev">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+    <script src="./src/swiper/swiper.min.js"></script>
+    <script src="./src/slider.js" type="module"></script>
+    <script src="./src/script.js" type="module"></script>
+    <script src="./src/keyboard/keyboard.js" type="module"></script>
+  </footer>
+</body>
+</html>
